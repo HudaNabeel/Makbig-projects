@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1><u>STUDENT REGISTRATION </u> </h1>
+          <div class="form-container">
+      <form >
+            <!-- name details -->
+             <div class="row-container">
+
+              <div class="input-container">
+        <label for="first_name"> First Name <span class="red-text">*</span>:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name " required /><br><br>
+        </div>
+
+             <div class="input-container">
+        <label for="last_name"> Last Name <span class="red-text">*</span>:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name " required /><br><br>
+             </div>
+             </div>
+           <div class="row-container">
+        <!-- date of birth -->
+        <div class="input-container">          
+        <label for="dob"> Date of Birth <span class="red-text">*</span>:</label>
+        <input type="date" id="dob" name="dob" required /><br><br>
+        </div>
+
+         <!-- email -->
+        <div class="input-container">
+        <label for="email"> Email<span class="red-text">*</span>:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required /><br><br>
+        </div>
+
+        </div>
+
+
+        <!-- gender -->
+         <div class="row-container">
+        <div class="input-container">
+        
+          <label for="gender" > Gender<span class="red-text">*</span></label>
+        <select id="gender" name="gender">
+          <option value="" disabled selected>Select your gender</option>
+          <option value="male" > Male</option>
+           <option value="female" > Female</option>
+
+        </select> <br><br>
+        </div>
+                 <!-- phone number -->
+                  <div class="input-container">
+        <label for="phone"> Phone Number<span class="red-text">*</span>:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required /><br><br>
+         </div>
+        </div>
+                  
+       
+       
+
+                 
+        
+          
+                 <!-- address -->
+                  <div class="row-container">
+                    <div class="input-container">
+                 <label for="address"> Address<span class="red-text">*</span>:</label>
+        <textarea id="address" name="address" rows="3"  placeholder="Enter your permanent address" required></textarea><br><br>
+        </div>
+
+       <div class="input-container">
+                     <!-- hostel facility -->
+        <label for=" hostel "> Do You Need Hostel Facility?:</label><br><br>
+        <label  class="wrapper" for="yes"> Yes</label>
+        <input type="radio" id="yes" name="hostel" value="yes" /><br><br>
+        <label  class="wrapper" for="no"> No</label>
+        <input type="radio" id="no" name="hostel" value="no" /><br>
+        </div>
+        </div>
+        <!-- qualification -->
+        <div class="row-container">
+        <div class="input-container">
+        <label for="qualification"> Qualification<span class="red-text">*</span>:</label>
+        <select id="qualification" name="qualification" required>
+          <option value="" disabled selected>Select your qualification</option>
+          <option value="plus two">Plus Tow</option>
+          <option value="bsc">BSC</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="master">Master's Degree</option>
+          </div>
+          
+
+        <div class="input-container">
+                   <!-- submit Button -->
+          <div class="button-submit">
+        <button type="submit" id="submit">Submit</button><br><br>
+        <button type="reset" id="reset">Reset</button><br><br>
+
+       </div>
+       </div>
+
+        </div>
+                
+       
+       
+        
+        
+        
+        
+
+    </div>
+      </form>
+  </body>
+</html>
